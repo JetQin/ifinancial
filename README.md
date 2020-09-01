@@ -18,7 +18,14 @@ Run below command to install dependencies
 npm install
 ```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build --prod --base-href /ifinancial/` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Preview
+
+```
+https://jetqin.github.io/ifinancial/index.html
+```
+
 
 ## Running unit tests
 
