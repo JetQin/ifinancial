@@ -1,0 +1,26 @@
+<app-header [title]="title"></app-header>
+<Card>
+  <CardHeader
+    [title]="'Jet Qin'"
+    [extra]="extra"
+    [thumb]="'https://zos.alipayobjects.com/rmsportal/hqQWgTXdrlmVVYi.jpeg'"
+    [thumbStyle]="avatar"
+  >
+    <ng-template #extra>
+      <span>No pains no gains</span>
+    </ng-template>
+  </CardHeader>
+  <CardBody>
+    <div>No content</div>
+  </CardBody>
+</Card>
+<List [renderHeader]="renderHeader4">
+  <ListItem
+    [thumb]="item.icon"
+    [arrow]="'dom'"
+    (onClick)="onClick()"
+    *ngFor="let item of data"
+  >
+    {{ item.name }}
+  </ListItem>
+ </List>

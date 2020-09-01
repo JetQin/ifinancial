@@ -1,0 +1,15 @@
+<app-header [title]="title"></app-header>
+<Grid [activeStyle]="false" [data]="category" (onClick)="click($event)"></Grid>
+<Card [full]="true">
+    <CardHeader
+      [title]="'Cost in current month'"
+      [extra]="extra"
+    >
+      <ng-template #extra>
+        <span></span>
+      </ng-template>
+    </CardHeader>
+    <CardBody>
+      <div id='container'></div>
+    </CardBody>
+</Card>

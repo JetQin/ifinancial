@@ -1,0 +1,20 @@
+
+<div style="border-bottom: 1px solid #ddd;">
+    <SearchBar [placeholder]="'Search'" [maxLength]="8"></SearchBar>
+</div>
+<SegmentedControl [values]="['Recommend', 'Favourite']"></SegmentedControl>
+<List>
+    <ListItem
+        multipleLine
+        [thumb]="item.icon"
+        [arrow]="'dom'"
+        (onClick)="onClick()"
+        [extra]="item.price"
+        *ngFor="let item of data"
+    >
+        {{ item.code }}
+        <Brief>{{ item.name }}</Brief>
+    </ListItem>
+</List>
+
+

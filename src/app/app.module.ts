@@ -1,0 +1,38 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { ViserModule } from 'viser-ng';
+
+import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { NgZorroAntdMobileModule } from 'ng-zorro-antd-mobile';
+import { TabbarComponent } from './tabbar/tabbar.component';
+import { HomeComponent } from './pages/home/home.component';
+import { PersonalComponent } from './pages/personal/personal.component';
+import { LifeComponent } from './pages/life/life.component';
+import { InvestmentComponent } from './pages/investment/investment.component';
+import { HeaderComponent } from './header/header.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    TabbarComponent,
+    HomeComponent,
+    PersonalComponent,
+    LifeComponent,
+    InvestmentComponent,
+    HeaderComponent
+  ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    HttpClientModule,
+    NgZorroAntdMobileModule,
+    ViserModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

@@ -1,0 +1,94 @@
+<TabBar
+      [hidden]="hidden"
+      [barTintColor]="'white'"
+      [tintColor]="tintColor"
+      [ngStyle]="tabbarStyle"
+      [activeTab]="selectedIndex"
+      [unselectedTintColor]="unselectedTintColor"
+      [tabBarPosition]="topFlag ? 'top' : 'bottom'"
+      (onPress)="tabBarTabOnPress($event)"
+    >
+      <TabBarItem [title]="'Home'"       [key]="1" [badge]="1" [icon]="icon1" [selectedIcon]="icon11">
+        <ng-template #icon1>
+          <div
+            style="width:22px;height: 22px;background: url('assets/icons/home.svg') center center / 21px 21px no-repeat;"
+          ></div>
+        </ng-template>
+        <ng-template #icon11>
+          <div
+          style="width:22px;height: 22px;background: url('assets/icons/home-selected.svg') center center / 21px 21px no-repeat;"
+        ></div>
+        </ng-template>
+        <div style="background-color: white; height: 100%; text-align: center">
+          <ng-container>
+            <app-home></app-home>
+          </ng-container>
+        </div>
+      </TabBarItem>
+      <TabBarItem [title]="'Investment'" [key]="2" [badge]="'new'" [icon]="icon2" [selectedIcon]="icon22">    
+        <ng-template #icon2>
+          <div
+            style="width:22px;height: 22px;background: url('assets/icons/investment.svg') center center / 21px 21px no-repeat;"
+          ></div>
+        </ng-template>
+        <ng-template #icon22>
+          <div
+            style="width:22px;height: 22px;background: url('assets/icons/investment-selected.svg') center center / 21px 21px no-repeat;"
+          ></div>
+        </ng-template>
+        <div style="background-color: white; height: 100%; text-align: center">
+          <ng-container>
+            <app-investment></app-investment>
+          </ng-container>
+        </div>
+      </TabBarItem>
+      <TabBarItem [title]="'Life'"       [key]="3" [dot]="true" [icon]="icon3" [selectedIcon]="icon33">
+      
+        <ng-template #icon3>
+          <div
+            style="width:22px;height: 22px;background: url('assets/icons/life.svg') center center / 21px 21px no-repeat;"
+          ></div>
+        </ng-template>
+        <ng-template #icon33>
+          <div
+            style="width:22px;height: 22px;background: url('assets/icons/life-selected.svg') center center / 21px 21px no-repeat;"
+          ></div>
+        </ng-template>
+        <div style="background-color: white; height: 100%; text-align: center">
+          <ng-container>
+            <app-life></app-life>
+          </ng-container>
+        </div>
+      </TabBarItem>
+      <TabBarItem [title]="'Personal'"   [key]="4" [icon]="icon4" [selectedIcon]="icon44">
+        <ng-template #icon4>
+          <div
+            style="width:22px;height: 22px;background: url('assets/icons/personal.svg') center center / 21px 21px no-repeat;"
+          ></div>
+        </ng-template>
+        <ng-template #icon44>
+          <div
+            style="width:22px;height: 22px;background: url('assets/icons/personal-selected.svg') center center / 21px 21px no-repeat;"
+          ></div>
+        </ng-template>
+        <div style="background-color: white; height: 100%; text-align: center">
+          <ng-container>
+            <app-personal></app-personal>
+          </ng-container>
+        </div>
+      </TabBarItem>
+    </TabBar>
+    <ng-template #content>
+      <a style="display: block; margin-top: 40px; margin-bottom: 20px; color: #108ee9" (click)="showNextTabBar($event)">
+        Click to next tab-bar
+      </a>
+      <a style="display: block; margin-top: 20px; margin-bottom: 20px; color: #108ee9" (click)="showTabBar($event)">
+        Click to show/hide tab-bar
+      </a>
+      <a style="display: block; margin-top: 20px; margin-bottom: 20px; color: #108ee9" (click)="changePosition($event)">
+        Click to change tab-bar position top/bottom
+      </a>
+      <a style="display: block; margin-bottom: 60px; color: #108ee9" (click)="showFullScreen($event)">
+        Click to switch fullscreen
+      </a>
+    </ng-template>
