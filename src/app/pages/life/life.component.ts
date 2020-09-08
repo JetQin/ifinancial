@@ -37,9 +37,11 @@ export class LifeComponent implements OnInit, AfterViewInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log('init changed');
   }
 
   ngAfterViewInit(): void {
+    console.log('view changed');
     this.initCostChart();
   }
 
@@ -61,6 +63,7 @@ export class LifeComponent implements OnInit, AfterViewInit {
     chart.tooltip({
       showMarkers: false
     });
+    chart.animate(true);
     
     const interval = chart
       .interval()

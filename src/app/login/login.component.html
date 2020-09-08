@@ -1,0 +1,18 @@
+
+<div class="layout">
+    <div class="am-list">
+        <div class="am-list-body">
+            <div class='logo'><img src="assets/imgs/logo.png"></div>
+            <InputItem [clear]="true" [placeholder]="'please input username'" [content]="'Username'"></InputItem>
+            <InputItem
+            [clear]="true"
+            [type]="'password'" 
+            [placeholder]="'please input password'"
+            [content]="'Password'"
+            >
+            </InputItem>
+            <WhiteSpace [size]="'xs'"></WhiteSpace>
+            <div Button [type]="'primary'" (onClick)="login()">Login</div>
+        </div>
+    </div>
+</div>

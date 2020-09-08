@@ -41,7 +41,14 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   title = '';
   state = {
-    data: ['AiyWuByWklrrUDlFignR', 'TekJlZRVCjLFexlOCuWn', 'IJOtIlfsYdTyaDTRVrLI'],
+    data: [
+      { icon: 'assets/imgs/ft-net-worth.svg', title: 'Net Worth', description: 'Get an accurate view of your net worth—what you have minus what you owe. Understanding this number can help you make smarter decisions about how to manage your money.'},
+      { icon: 'assets/imgs/ft-savings-planner.svg', title: 'Savings Planner', description: 'The Savings Planner feature can show you an annual savings range that will project a 70% chance of reaching your retirement goals.'},
+      { icon: 'assets/imgs/ft-budgeting.svg', title: 'Budgeting', description: 'Organize your spending and savings automatically by date, category, or merchant. Set a monthly spending target and easily see if you are tracking over or under your plan.'},
+      { icon: 'assets/imgs/ft-cash-flow.svg', title: 'Cash Flow', description: 'See what has come in and gone out in the past 30 days so you can stick to your spending and savings goals.'},
+      { icon: 'assets/imgs/ft-retirement-planner.svg', title: 'Retirement Planner', description: 'See if your retirement savings are on track to retire by your target date and calculate your projected monthly income.'},
+      { icon: 'assets/imgs/ft-education-planner.svg', title: 'Education Planner',description: 'We’ll help you estimate and plan how much you should be saving today to cover education costs down the road. '},
+    ],
     imgHeight: '184px'
   };
 
@@ -66,10 +73,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   afterChange(event) {
     console.log('slide to ' + event);
-  }
-
-  onClick1() {
-    this.state.data.push('AiyWuByWklrrUDlFignR');
   }
 
   initLifeCost(){

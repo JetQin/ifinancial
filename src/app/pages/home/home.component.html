@@ -1,12 +1,15 @@
 <app-header [title]="title"></app-header>
 <Carousel [infinite]="true" (beforeChange)="beforeChange($event)" (afterChange)="afterChange($event)">
     <CarouselSlide *ngFor="let item of state.data; let i = index" [ngStyle]="{ height: state.imgHeight }">
-        <div style="display: inline-block; width: 100%;" [ngStyle]="{ height: state.imgHeight }">
-        <img
-            src="https://zos.alipayobjects.com/rmsportal/{{ item }}.png"
-            style="pointer-events: none; width: 100%;"
-        />
+      <div class="card">
+        <h2 class="card_header">{{item.title}}</h2>
+        <div class="divider divider_black u-margin-vertical"></div>
+        <div class="card_img lazyloaded"
+           style="background-image: url('{{item.icon}}');"></div>
+        <div class="card_content">
+          <p class="u-responsive-copy">{{item.description}}</p>
         </div>
+      </div>
     </CarouselSlide>
 </Carousel>
 <Card [full]="true">
@@ -18,13 +21,23 @@
     <CardBody>
       <div id="c1"></div>
     </CardBody>
-    <!-- <CardFooter [content]="'footer content'" [extra]="footerExtra">
-      <ng-template #footerExtra>
-        <div>extra footer content</div>
-      </ng-template>
-    </CardFooter> -->
 </Card>
-
+<div class="card">
+  <h2 class="card_header">Employer Plan Analysis</h2>
+  <div class="divider divider_black u-margin-vertical"></div>
+  <div class="card_img lazyloaded"
+     style="background-image: url('assets/imgs/ft-employer-plan-analysis.svg');"></div>
+  <div class="card_content">
+    <p class="u-responsive-copy">The investments in your employer retirement plan should complement your Personal Strategy. Upload a list of your available fund options and we'll help you choose an allocation to align with your Personal Capital portfolio and long-term goals.</p>
+    <div class="card_action">
+      <a title="Learn more about our Employer Plan Analysis tool" 
+      href="https://www.personalcapital.com/blog/retirement-planning/average-401k-balance-age/"
+      class="pc-arrow-link pc-arrow-link--black">
+      Learn More >
+     </a>
+   </div>
+  </div>
+</div>
 <Card [full]="true">
     <CardHeader [title]="'Investment Interest'">
         <ng-template #extra>
@@ -34,9 +47,4 @@
     <CardBody>
       <div id="c2"></div>
     </CardBody>
-    <!-- <CardFooter [content]="'footer content'" [extra]="footerExtra">
-        <ng-template #footerExtra>
-        <div>extra footer content</div>
-        </ng-template>
-    </CardFooter> -->
 </Card>

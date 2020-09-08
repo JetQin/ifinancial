@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-personal',
@@ -25,7 +26,7 @@ export class PersonalComponent implements OnInit {
   ]
   renderFooter: Function;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -49,6 +50,10 @@ export class PersonalComponent implements OnInit {
   onDisableClick() {
     console.log('click', this.disabled);
     this.disabled = true;
+  }
+
+  signout() {
+    this.router.navigate(['login']);
   }
 
 }
