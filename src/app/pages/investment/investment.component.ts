@@ -10,20 +10,19 @@ import { catchError, retry } from 'rxjs/operators';
 })
 export class InvestmentComponent implements OnInit {
 
-  // data = [
-  //   { code: 'AAPL', name: 'Apple Inc.', price: 501.94, icon: 'assets/investment/apple.svg' },
-  // ]
+  loading:boolean = true;
   data: any;
   constructor(private service: BackendService) { }
 
   ngOnInit(): void {
+    this.loading = true;
     this.fetchCompany();
   }
 
   fetchCompany(): void {
-    this.service.fetchCompany().subscribe((data: any) => {
-      console.log(data[0]);
-      this.data = data;
+    this.service.fetchCompany().subscribe((resp: any) => {
+      this.data = resp.data;
+      this.loading = false;
     })
   }
 

@@ -15,6 +15,8 @@ export class BackendService {
   }
 
   fetchCompany(){
-    return this.http.get(this.url+'/company');
+    var userId = localStorage.getItem('userId');
+    console.log('local userId:'+userId);
+    return this.http.get(this.url+'/company?userId='+userId);
   }
 }

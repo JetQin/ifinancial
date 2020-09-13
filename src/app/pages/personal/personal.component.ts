@@ -53,6 +53,7 @@ export class PersonalComponent implements OnInit {
   }
 
   signout() {
+    localStorage.removeItem('userId');
     this.router.navigate(['login']);
   }
 

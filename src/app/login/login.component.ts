@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  userId = '';
   thumbStyle = {
     width: '32px',
     height: '32px'
@@ -21,6 +22,12 @@ export class LoginComponent implements OnInit {
   login() {
     console.log('log event');
     this.router.navigate(['land']);
+    localStorage.setItem('userId', this.userId);
+  }
+
+  inputChange(e) {
+    const value = e.replace(/\s/g, '');
+    this.userId = e;
   }
 
 }
