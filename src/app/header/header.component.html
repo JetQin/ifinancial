@@ -1,6 +1,11 @@
-<Navbar [rightContent]="right">
+<Navbar [leftContent]="left" [rightContent]="right">
     {{title}}
 </Navbar>
+<ng-template #left >
+    <!-- <div class="logo">
+        <i class="icon-md mdi mdi-wallet-membership text-success ml-auto"></i>
+    </div> -->
+</ng-template>
 
 <ng-template #right>
     <Icon [type]="'ellipsis'"></Icon>

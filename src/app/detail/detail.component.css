@@ -1,0 +1,93 @@
+.mb-0, .my-0 {
+    margin-bottom: 0 !important;
+    color: #1890ff;
+}
+
+.mb-1, .my-1 {
+    margin-bottom: 0.25rem !important;
+    color: #000;
+}
+
+.bg-gray-dark {
+    background: #a4bb4c !important;
+}
+
+.text-muted, .preview-list .preview-item .preview-item-content p .content-category {
+    color: #6c7293 !important
+}
+
+.font-weight-normal {
+    font-weight: 400 !important;
+}
+
+.icon-lg {
+    font-size: 3.75rem;
+}
+
+.icon-box-danger {
+    width: 40px;
+    height: 37px;
+    background: rgba(252, 66, 74, 0.11);
+    border-radius: 7px;
+    color: #fc424a;
+}
+.icon-box-success {
+    width: 40px;
+    height: 37px;
+    background: rgba(0, 210, 91, 0.11);
+    border-radius: 7px;
+    color: #00d25b;
+}
+.card {
+    margin-top: 0.5em;
+    border-radius: 0.25rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    font-family: "Rubik", sans-serif;
+    word-wrap: break-word;
+    background-clip: border-box;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+.card .card-body{
+  padding: 1.25rem 1.2625rem;
+}
+
+.card-title {
+    color: #141414;
+    margin-bottom: 1.125rem;
+    text-transform: capitalize;
+}
+
+h2, .h2 {
+    font-size: 1.875rem;
+}
+
+h5 {
+  display: block;
+  color: #262626;
+  font-size: 1em;
+  -webkit-margin-start: 0px;
+  margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+h6 {
+    display: block;
+    color: #262626;
+    font-size: 1.2em;
+    margin-block-end: 0.43em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h6, .h6 {
+    font-size: 0.9375rem;
+}

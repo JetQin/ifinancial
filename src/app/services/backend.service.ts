@@ -14,9 +14,14 @@ export class BackendService {
     this.url = environment.url;
   }
 
+  fetchStock(){
+    return this.http.get('assets/data/stick.json')
+  }
+
   fetchCompany(){
     var userId = localStorage.getItem('userId');
     console.log('local userId:'+userId);
-    return this.http.get(this.url+'/company?userId='+userId);
+    // return this.http.get(this.url+'/company?userId='+userId);
+    return this.http.get('assets/data/nasdaq.json')
   }
 }

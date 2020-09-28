@@ -2,7 +2,7 @@
 <div style="border-bottom: 1px solid #ddd;">
     <SearchBar [placeholder]="'Search'" [maxLength]="8"></SearchBar>
 </div>
-<SegmentedControl [values]="['Recommend', 'Favourite']"></SegmentedControl>
+<SegmentedControl [values]="['Recommend', 'Favourite']" class="title"></SegmentedControl>
 <div *ngIf="loading; else elseBlock" class="layout">
     <Icon [type]="'loading'" [size]="'lg'"></Icon>
 </div>
@@ -13,11 +13,11 @@
             [thumb]="item.icon"
             [arrow]="'dom'"
             (onClick)="onClick()"
-            [extra]="item.price"
+            [extra]="item.regularMarketDayLow.raw"
             *ngFor="let item of data"
         >
-            {{ item.code }}
-            <Brief>{{ item.name }}</Brief>
+            {{ item.symbol }}
+            <Brief>{{ item.shortName }}</Brief>
         </ListItem>
     </List>
 </ng-template>

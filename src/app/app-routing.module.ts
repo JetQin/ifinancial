@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router'; 
 import { TabbarComponent } from './tabbar/tabbar.component'
 import { LoginComponent } from './login/login.component';
+import { DetailComponent } from './detail/detail.component';
 
 const routes: Routes = [
     { path: '',   redirectTo: '/login', pathMatch: 'full' },
     { path: 'login', component: LoginComponent },
     { path: 'land', component: TabbarComponent },
+    { path: 'detail', component: DetailComponent },
 ]; // sets up routes constant where you define your routes
 
 // configures NgModule imports and exports
