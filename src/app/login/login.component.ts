@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
 
   login() {
     console.log('log event');
-    this.router.navigate(['land']);
+    this.router.navigate(['land'],  { queryParams: { index: 0}});
     localStorage.setItem('userId', this.userId);
   }
 
