@@ -70,6 +70,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   initLifeCost(){
     const chart = new Chart({
       container: 'c1',
+      autoFit: true,
       width: 450,
       height: 300,
     }); 

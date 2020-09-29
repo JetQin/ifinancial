@@ -4,6 +4,78 @@
   height: 900px;
 }
 
+.cc_card {
+  height: 230px;
+  background: #00204f;
+  border-radius: 15px;
+  border: none;
+}
+
+.title_block {
+  top: 10px;
+  position: relative;
+}
+
+.title_block_text {
+  color: white;
+  font-size: 1.5em;
+  text-align: right;
+  margin-right: 40px;
+}
+
+.title_img {
+  top:-14px;
+  position: relative;
+}
+
+.card_block {
+  top: 15px;
+  position: relative;
+}
+
+.bottom_block {
+  top: 30px;
+  position: relative;
+}
+
+.d-flex {
+  position: relative;
+}
+
+.balance {
+  top: 10px;
+  position: relative;
+}
+
+.balance_amount {
+  position: relative;
+  top: -19px;
+  color: white;
+  font-size: 16px;
+  text-align: right;
+}
+
+.balance_text {
+  text-align: right;
+  color: white;
+  margin-right: 90px;
+  font-size: 16px;
+}
+
+.dots span {
+  height: 5px;
+  width: 5px;
+  margin-right: 3px;
+  margin-bottom: 2px !important;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: inline-block
+}
+
+.number {
+  font-size: 14px
+}
+
 .mb-0, .my-0 {
     margin-bottom: 0 !important;
     color: #1890ff;
@@ -189,7 +261,7 @@ h6, .h6 {
 }
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-time {
     position: absolute;
-    left: -115px;
+    left: -80px;
     text-align: right;
     padding: 10px;
     -webkit-box-sizing: border-box;

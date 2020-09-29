@@ -1,12 +1,13 @@
 <Navbar [leftContent]="left" [rightContent]="right">
-    {{title}}
+    <div class="logo">
+        <img src="../../assets/imgs/hsbc-logo.svg">
+    </div>
 </Navbar>
 <ng-template #left >
     <!-- <div class="logo">
         <i class="icon-md mdi mdi-wallet-membership text-success ml-auto"></i>
     </div> -->
 </ng-template>
-
 <ng-template #right>
     <Icon [type]="'ellipsis'"></Icon>
 </ng-template>
