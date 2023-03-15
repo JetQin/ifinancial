@@ -25,10 +25,10 @@ Run `ng build --prod --base-href /ifinancial/` to build the project. The build a
 ```
 https://jetqin.github.io/ifinancial/index.html
 ```
-+ https://user-images.githubusercontent.com/834055/225368471-f35663b7-0178-4fed-be25-b66ebaed850a.png
-+ https://user-images.githubusercontent.com/834055/225368463-36d0312a-344c-42c8-a0c8-7970f2010e9d.png
-+ https://user-images.githubusercontent.com/834055/225368459-2703a1cf-cbf5-4678-a164-cf41b6019282.png
-+ https://user-images.githubusercontent.com/834055/225368442-c3736d69-07fd-472c-9855-c861183c37df.png
++ ![img](https://user-images.githubusercontent.com/834055/225368471-f35663b7-0178-4fed-be25-b66ebaed850a.png)
++ ![img](https://user-images.githubusercontent.com/834055/225368463-36d0312a-344c-42c8-a0c8-7970f2010e9d.png)
++ ![img](https://user-images.githubusercontent.com/834055/225368459-2703a1cf-cbf5-4678-a164-cf41b6019282.png)
++ ![img](https://user-images.githubusercontent.com/834055/225368442-c3736d69-07fd-472c-9855-c861183c37df.png)
 
 ## Running unit tests
 
